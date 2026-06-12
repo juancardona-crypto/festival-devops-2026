@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f 0%, #2a2a40 100%);
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 3px solid #ff6b6b;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #ff6b6b;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #dddddd;
+}
+
+main {
+    flex: 1;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.info {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.info h2 {
+    color: #ff6b6b;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.info h2:first-of-type {
+    margin-top: 0;
+}
+
+.info ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.info li {
+    background: rgba(255, 255, 255, 0.05);
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.cta {
+    text-align: center;
+    background: rgba(255, 107, 107, 0.2);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.cta h2 {
+    margin-bottom: 1rem;
+}
+
+button {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.2s;
+}
+
+button:hover {
+    background: #ff5252;
+    transform: scale(1.05);
+}
+
+#mensaje {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #ffd93d;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #aaaaaa;
+}

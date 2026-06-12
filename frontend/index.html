@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festival DevOps Music Fest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎸 Festival DevOps Music Fest 🎧</h1>
+        <p>Donde la música y la tecnología se encuentran</p>
+    </header>
+
+    <main>
+        <section class="info">
+            <h2>📅 Fecha</h2>
+            <p>15 y 16 de agosto de 2026</p>
+            
+            <h2>📍 Lugar</h2>
+            <p>Centro de Tecnología y Manufactura Avanzada - SENA CTMA</p>
+            
+            <h2>🎵 Artistas invitados</h2>
+            <ul>
+                <li>Imagine Dragons</li>
+                <li>The Warning</li>
+                <li>Daft Punk (DJ Set)</li>
+                <li>Molotov</li>
+            </ul>
+        </section>
+
+        <section class="cta">
+            <h2>🚀 ¡Adquiere tus tickets!</h2>
+            <button id="comprarBtn">Comprar ahora</button>
+            <p id="mensaje"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Festival DevOps Music Fest - Donde la sinfonía del código cobra vida</p>
+    </footer>
+
+    <script>
+        document.getElementById('comprarBtn').addEventListener('click', function() {
+            document.getElementById('mensaje').innerHTML = '🎫 Redirigiendo al módulo de pagos...';
+        });
+    </script>
+</body>
+</html>
