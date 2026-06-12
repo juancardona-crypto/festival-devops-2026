@@ -8,7 +8,7 @@ def home():
 
 @app.route('/artistas')
 def artistas():
-    return jsonify({'artistas': ['Imagine Dragons', 'The Warning', 'Daft Punk']})
+    return jsonify({'artistas': ['Imagine Dragons', 'The Warning', 'Daft Punk', 'Maneskin']})
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
