@@ -1,10 +1,9 @@
 name: CI
 
-on: 
+on:
   push:
     branches:
       - main
-
   pull_request:
     branches:
       - main
@@ -13,16 +12,15 @@ jobs:
   verificar:
     runs-on: ubuntu-latest
 
-  steps:
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
 
-    - name: Obtener repositorio
-      uses: actions/checkout@v4
+      - name: Verificar index.html
+        run: test -f frontend/index.html
 
-    - name: verificar archivo index.html
-      run: test -f frontend/index.html
+      - name: Verificar style.css
+        run: test -f frontend/style.css
 
-    - name: Verificar archivo style.css
-      run: test -f frontend/style.css
-
-    - name: Verificar archivo README.md
-      run: test -f README.md
+      - name: Verificar README.md
+        run: test -f README.md
